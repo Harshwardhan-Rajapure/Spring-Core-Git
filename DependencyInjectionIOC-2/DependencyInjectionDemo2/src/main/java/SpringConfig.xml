@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+	<beans>
+			
+		<bean id="e1" class="com.tka.entity.Address">
+<!--		<property name="hnumber" value="101"></property>-->
+<!--		<property name="village" value="Hamidwada"></property>-->
+<!--		<property name="pincode" value="416 235"></property>-->
+
+			<constructor-arg index="0" value="102"></constructor-arg>
+			<constructor-arg index="1" value="Hamidwada"></constructor-arg>
+			<constructor-arg index="2" value="416 235"></constructor-arg>
+<!--			<constructor-arg index="3" ref="p"></constructor-arg> -->
+			<property name="person" ref="p"></property>
+<!--			<constructor-arg index="4" ref="c"></constructor-arg>-->
+			<property name="car" ref="c"></property>
+			
+		</bean>	
+		
+		
+		
+		<bean id="p" class="com.tka.entity.Person">
+			<property name="id" value="14"></property>
+			<property name="name" value="Harsh Rajapure"></property>
+			<property name="gender" value="Male"></property>
+			
+<!--			<constructor-arg index="0" value="10"></constructor-arg>-->
+<!--			<constructor-arg index="1" value="Harsh"></constructor-arg>-->
+<!--			<constructor-arg index="2" value="Male"></constructor-arg>-->
+			
+		</bean>
+		
+		
+		
+		
+		<bean id="c" class="com.tka.entity.Car">
+<!--			<property name="cname" value="Swift"></property>-->
+<!--			<property name="cowner" value="Harsh Rajapure"></property>-->
+<!--			<property name="cprice" value="800000"></property>-->
+			
+			<constructor-arg index="0" value="SwiftDesire"></constructor-arg>
+			<constructor-arg index="1" value="Harshwardhan Rajapure"></constructor-arg>
+			<constructor-arg index="2" value="1000000"></constructor-arg>
+			
+		</bean>
+			
+	</beans>
